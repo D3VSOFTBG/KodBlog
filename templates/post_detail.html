@@ -1,0 +1,18 @@
+{% extends "base.html" %} 
+{% block content %}
+
+<ol class="breadcrumb">
+  <li class="breadcrumb-item"><a href="{% url 'home' %}">Home</a></li>
+  <li class="breadcrumb-item active">{{ object.title }}</li>
+</ol>
+
+<div class="card border-danger mb-3">
+  <div class="card-header"><span class="badge badge-danger">Author: {{ post.author }}</span> | <span class="badge badge-success">Created: {{ post.created_on }}</span> | <span class="badge badge-info">Updated: {{ post.updated_on }}</span></div>
+  <div class="card-body text-center">
+    <h1 class="card-title">{% block title %} {{ object.title }} {% endblock title %}</h1>
+    <span class="card-text">{{ object.content | safe }}</span>
+  </div>
+</div>
+    <a type="button" class="btn btn-info" href="{% url 'home' %}">Back to home</a>
+{% endblock content %}
+

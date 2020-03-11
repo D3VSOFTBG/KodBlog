@@ -1,0 +1,24 @@
+{% extends "base.html" %} 
+{% block content %}
+
+<table class="table table-hover">
+  <thead>
+    <tr>
+      <th scope="col">Title</th>
+      <th scope="col">Author</th>
+      <th scope="col">Created on</th>
+      <th scope="col"></th>
+    </tr>
+  </thead>
+  <tbody>
+      {% for post in post_list %}
+    <tr>
+      <th>{{ post.title }}</th>
+      <td>{{ post.author }}</td>
+      <td>{{ post.created_on}}</td>
+      <td><a href="{% url 'post_detail' post.slug  %}">Read more</a></td>
+    </tr>
+      {% endfor %}
+  </tbody>
+</table>
+{%endblock%}
