@@ -11,17 +11,17 @@ KodBlog1 is Blog project written in Python (Django Framework)
 ```shell script
 pip3 install -r requirements.txt
 ```
-###Run
+### Run
 ```shell script
 python manage.py runserver
 ```
-###Admin panel
+### Admin Panel
 go to your-site.com/admin or 127.0.0.1:8000/admin
 ```
 username: admin
 password: admin
 ```
-###Images
+### Images
 ![blog](img/blog.png)
 ![post](img/post.png)
 ![panel](img/panel.png)
