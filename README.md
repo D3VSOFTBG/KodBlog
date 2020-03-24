@@ -7,6 +7,10 @@ KodBlog1 is Blog project written in Python (Django Framework)
 - jQuery - 3
 ### Developers
 - Tarik Mustafa (D3VBG)
+### Install
+```shell script
+sudo apt-get install python3-dev default-libmysqlclient-dev
+```
 ### Requirements
 ```shell script
 pip3 install -r requirements.txt

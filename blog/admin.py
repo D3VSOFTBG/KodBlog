@@ -10,3 +10,6 @@ class PostAdmin(admin.ModelAdmin):
 
 
 admin.site.register(Post, PostAdmin)
+admin.site.site_header = "KodAdmin"
+admin.site.site_title = "Admin Panel"
+admin.site.index_title = "Welcome to KodAdmin Panel"
