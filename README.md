@@ -1,4 +1,4 @@
-# KodBlog1
+# KodBlog
 KodBlog is Blog project written in Python (Django Framework)
 ### Versions
 - Python - 3
